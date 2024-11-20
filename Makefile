@@ -6,7 +6,7 @@
 #    By: ggoncalv <ggoncalv@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/18 16:16:20 by ggoncalv          #+#    #+#              #
-#    Updated: 2024/11/18 16:27:44 by ggoncalv         ###   ########.fr        #
+#    Updated: 2024/11/20 15:07:28 by ggoncalv         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ NAME_TEST = libftprintf_test
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-SRC = ft_printf.c
+SRC = ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c ft_putpercent.c
 OBJ = $(SRC:.c=.o)
 
 #TEST________________________________________________________________________
@@ -50,3 +50,6 @@ fcleantest: fclean
 	rm -rf $(OBJ_TEST) $(NAME_TEST)
 
 retest: fcleantest test
+ 
+debug:
+	cc -g ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c main.c -o ./libftprintf_test

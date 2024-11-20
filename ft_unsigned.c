@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_unsigned.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ggoncalv <ggoncalv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/03 18:11:40 by ggoncalv          #+#    #+#             */
-/*   Updated: 2024/11/14 17:25:36 by ggoncalv         ###   ########.fr       */
+/*   Created: 2024/11/19 16:22:46 by ggoncalv          #+#    #+#             */
+/*   Updated: 2024/11/20 11:11:33 by ggoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libftprintf.h"
 
-void	ft_putstr_fd(char *s, int fd)
+int ft_unsigned(unsigned int n)
 {
-	int		i;
-
-	i = 0;
-	while (s[i] != '\0')
-	{
-		write(fd, &s[i], 1);
-		i++;
-	}
+    
 }
