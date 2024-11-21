@@ -6,7 +6,7 @@
 /*   By: ggoncalv <ggoncalv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 18:11:40 by ggoncalv          #+#    #+#             */
-/*   Updated: 2024/11/19 14:50:47 by ggoncalv         ###   ########.fr       */
+/*   Updated: 2024/11/21 15:22:10 by ggoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,9 @@ int	ft_putstr(char *s)
 	int		i;
 
 	i = 0;
+	if (s == NULL)
+		return(write(1, "(null)", 6));
+	
 	while (s[i] != '\0')
 	{
 		write(1, &s[i], 1);

@@ -1,26 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_pointer.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ggoncalv <ggoncalv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/18 16:17:44 by ggoncalv          #+#    #+#             */
-/*   Updated: 2024/11/21 16:26:21 by ggoncalv         ###   ########.fr       */
+/*   Created: 2024/11/21 17:04:12 by ggoncalv          #+#    #+#             */
+/*   Updated: 2024/11/21 17:37:20 by ggoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-#define LIBFTPRINTF_H
-# include <stdarg.h>
-# include <unistd.h>
-# include <stddef.h>
+#include "libftprintf.h"
 
-int ft_printf(const char *format, ...);
-int	ft_putchar(char c);
-int	ft_putstr(char *s);
-int	ft_putnbr(int n);
-int ft_putpercent(void);
-int ft_unsigned(unsigned int n);
-
-#endif
+int ft_pointer(void *p)
+{
+    int i;
+    char    str[14];
+    
+    if (p == NULL)
+        return (write(1, "(nil)", 5));
+    
+}

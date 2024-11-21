@@ -6,7 +6,7 @@
 /*   By: ggoncalv <ggoncalv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 16:19:50 by ggoncalv          #+#    #+#             */
-/*   Updated: 2024/11/20 15:35:07 by ggoncalv         ###   ########.fr       */
+/*   Updated: 2024/11/21 16:24:39 by ggoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ static int  ft_convert(const char *format, va_list args)
         return (ft_putnbr(va_arg(args, int)));
     else if (*format == '%')
         return (ft_putpercent());
-    /*else if (*format == 'u')
-        return ();
-    else if (*format == 'p')
+    else if (*format == 'u')
+        return (ft_unsigned(va_arg(args, unsigned int)));
+    /*else if (*format == 'p')
         return (); 
     else if (*format == 'x')
         return (); 
