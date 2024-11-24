@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ggoncalv <ggoncalv@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 16:19:50 by ggoncalv          #+#    #+#             */
-/*   Updated: 2024/11/21 16:24:39 by ggoncalv         ###   ########.fr       */
+/*   Updated: 2024/11/23 21:15:54 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@ static int  ft_convert(const char *format, va_list args)
     else if (*format == 'u')
         return (ft_unsigned(va_arg(args, unsigned int)));
     /*else if (*format == 'p')
-        return (); 
+        return (ft_pointer(va_arg(args, void *))); */
     else if (*format == 'x')
-        return (); 
+        return (ft_hex(va_arg(args, unsigned int))); 
     else if (*format == 'X')
-        return (); */
+        return (ft_hex(va_arg(args, unsigned int)));
     return (0);
 }
 

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ggoncalv <ggoncalv@student.42.fr>          +#+  +:+       +#+         #
+#    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/18 16:16:20 by ggoncalv          #+#    #+#              #
-#    Updated: 2024/11/21 16:20:17 by ggoncalv         ###   ########.fr        #
+#    Updated: 2024/11/22 12:04:48 by marvin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ NAME_TEST = libftprintf_test
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-SRC = ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c ft_putpercent.c ft_unsigned.c
+SRC = ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c ft_putpercent.c ft_unsigned.c ft_hex.c
 OBJ = $(SRC:.c=.o)
 
 #TEST________________________________________________________________________

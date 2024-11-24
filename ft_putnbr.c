@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ggoncalv <ggoncalv@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 18:17:44 by ggoncalv          #+#    #+#             */
-/*   Updated: 2024/11/20 15:25:39 by ggoncalv         ###   ########.fr       */
+/*   Updated: 2024/11/23 21:18:20 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 static int	count_size(int n)
 {
 	int		i;
-	char	str[12];
 	int	j;
 
 	i = 0;
@@ -28,12 +27,9 @@ static int	count_size(int n)
 		j++;
 	}
 	while (n > 9)
-	{
-		str[i++] = n % 10 + '0';
 		n = n / 10;
-	}
 	if (n <= 9)
-		str[i] = n + '0';
+		i++;
 	if (i == 0)
 		return (j = j + 1);
 	return (j = j + i);
