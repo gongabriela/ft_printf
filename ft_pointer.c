@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_pointer.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ggoncalv <ggoncalv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 17:04:12 by ggoncalv          #+#    #+#             */
-/*   Updated: 2024/11/22 22:55:46 by marvin           ###   ########.fr       */
+/*   Updated: 2024/11/25 15:21:59 by ggoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int ft_pointer(void *p) //pode receber outros tipos de pointer, consertar isso
 {

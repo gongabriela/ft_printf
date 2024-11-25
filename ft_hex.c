@@ -1,5 +1,5 @@
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int ft_hex(unsigned int n)
 {
@@ -8,6 +8,8 @@ int ft_hex(unsigned int n)
     unsigned int hex;
 
     i = 0;
+    if (n == 0)
+        return(write(1, "0", 1), 1);
     while(n != 0)
     {
         hex = n % 16;
@@ -18,11 +20,13 @@ int ft_hex(unsigned int n)
             str[i] = hex + 87;
         i++;
     }
-    str[i] = 'x';
-    i++;
-    str[i] = '0';
     hex = i;
+    i--;
     while (0 <= i)
          write(1, &str[i--], 1);
     return (hex);
 }
+
+//pode haver uma funcao para os hexadecimais x, X e para usar no p
+//qual o data type para colocar aqui? nao deve ser unsigned int
+//usar strlen p devolver o tamanho doq a gnt vai printar?? 

@@ -6,11 +6,11 @@
 /*   By: ggoncalv <ggoncalv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 18:11:40 by ggoncalv          #+#    #+#             */
-/*   Updated: 2024/11/21 15:22:10 by ggoncalv         ###   ########.fr       */
+/*   Updated: 2024/11/25 15:23:13 by ggoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_putstr(char *s)
 {

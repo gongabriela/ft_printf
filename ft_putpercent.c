@@ -6,11 +6,11 @@
 /*   By: ggoncalv <ggoncalv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 15:05:39 by ggoncalv          #+#    #+#             */
-/*   Updated: 2024/11/20 15:07:00 by ggoncalv         ###   ########.fr       */
+/*   Updated: 2024/11/25 15:22:15 by ggoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int ft_putpercent(void)
 {
