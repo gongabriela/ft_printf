@@ -1,32 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_hex.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ggoncalv <ggoncalv@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/26 14:21:41 by ggoncalv          #+#    #+#             */
+/*   Updated: 2024/11/26 14:35:31 by ggoncalv         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_hex(unsigned int n)
+int	ft_hex(unsigned int n, char *base)
 {
-    char str[10];
-    int i;
-    unsigned int hex;
+	int	i;
 
-    i = 0;
-    if (n == 0)
-        return(write(1, "0", 1), 1);
-    while(n != 0)
-    {
-        hex = n % 16;
-        n = n / 16;
-        if (0 <= hex && hex <= 9)
-            str[i] = hex + 48;
-        else
-            str[i] = hex + 87;
-        i++;
-    }
-    hex = i;
-    i--;
-    while (0 <= i)
-         write(1, &str[i--], 1);
-    return (hex);
+	i = 0;
+	if (n >= 16)
+		i += ft_hex(n / 16, base);
+	i += write(1, &base[n % 16], 1);
+	return (i);
 }
-
-//pode haver uma funcao para os hexadecimais x, X e para usar no p
-//qual o data type para colocar aqui? nao deve ser unsigned int
-//usar strlen p devolver o tamanho doq a gnt vai printar?? 

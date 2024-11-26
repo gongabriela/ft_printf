@@ -6,7 +6,7 @@
 #    By: ggoncalv <ggoncalv@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/18 16:16:20 by ggoncalv          #+#    #+#              #
-#    Updated: 2024/11/25 16:55:36 by ggoncalv         ###   ########.fr        #
+#    Updated: 2024/11/26 13:41:11 by ggoncalv         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ NAME_TEST = libftprintf_test
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-SRC = ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c ft_putpercent.c ft_unsigned.c ft_hex.c ft_hex_uppercase.c
+SRC = ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c ft_unsigned.c ft_hex.c ft_pointer.c
 OBJ = $(SRC:.c=.o)
 
 #TEST________________________________________________________________________
