@@ -6,7 +6,7 @@
 #    By: ggoncalv <ggoncalv@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/18 16:16:20 by ggoncalv          #+#    #+#              #
-#    Updated: 2024/11/26 13:41:11 by ggoncalv         ###   ########.fr        #
+#    Updated: 2024/11/26 17:02:49 by ggoncalv         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ SRC = ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c ft_unsigned.c ft_hex.c ft
 OBJ = $(SRC:.c=.o)
 
 #TEST________________________________________________________________________
-SRC_TEST =  main.c 
+SRC_TEST =  ft_printf_main.c 
 OBJ_TEST = $(SRC_TEST:.c=.o)
 #____________________________________________________________________________
 
